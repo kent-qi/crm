@@ -87,7 +87,7 @@ public class CustomerController {
 			code = "0";
 			msg = "成功";
 			logger.info(JSONObject.fromObject(customer));
-			JSONObject obj = new JSONObject();// {'code':0, data: {}, msg:''}
+			JSONObject obj = new JSONObject();  // {'code':0, data: {}, msg:''}
 			obj.put("code", code);
 			obj.put("data", JSONObject.fromObject(customer));
 			obj.put("msg", msg);
