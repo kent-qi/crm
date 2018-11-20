@@ -1,9 +1,8 @@
 package com.itheima.crm.controller;
 
-import com.itheima.crm.pojo.BaseDict;
 import com.itheima.crm.pojo.Customer;
-import com.itheima.crm.pojo.QueryVo;
-import com.itheima.crm.service.BaseDictService;
+
+
 import com.itheima.crm.service.CustomerService;
 import com.itheima.crm.utils.Page;
 import java.util.List;
@@ -23,18 +22,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("customer")
 public class CustomerController {
-	@Autowired
-	private BaseDictService dictService;
+	
 	@Autowired
 	private CustomerService customerService;
-	@Value("${customer_from_type}")
-	private String customer_from_type;
-	@Value("${customer_industry_type}")
-	private String customer_industry_type;
-
-	@Value("${customer_level_type}")
-	private String customer_level_type;
-	private static Logger logger = Logger.getLogger(CustomerController.class);
+	
 
 	/**
 	 * 程序
@@ -47,26 +38,13 @@ public class CustomerController {
 	 */
 
 	@RequestMapping("list")
-	public String list(Model model, QueryVo vo) {
-		logger.debug("list request params:");
-		logger.debug(vo.toString());
-		// 查询来源
-		List<BaseDict> fromType = dictService.getBaseDictByCode(customer_from_type);
-		// 查询行业
-		List<BaseDict> industryType = dictService.getBaseDictByCode(customer_industry_type);
-		List<BaseDict> levelType = dictService.getBaseDictByCode(customer_level_type);
-		// 设置数据模型的返回
-		model.addAttribute("fromType", fromType);
-		model.addAttribute("industryType", industryType);
-		model.addAttribute("levelType", levelType);
-		model.addAttribute("vo", vo);
-
+	public String list(Model model) {
+	
 		// 根据查询条件分页查询用户列表
-		Page<Customer> page = customerService.getCustomerByQueryVo(vo);
-		logger.debug("list search result: ");
-		logger.debug(page);
+		List<Customer> list = customerService.getCustomer();
+		
 		// 设置分页数据返回
-		model.addAttribute("page", page);
+		model.addAttribute("page", list);
 		return "customer";
 	}
 	/*
@@ -81,12 +59,10 @@ public class CustomerController {
 		String code = "1";
 		String msg = "";
 		if (id != null) {
-			logger.debug("ssssssssssss");
 			customer = customerService.getCustomerById(id);
-			logger.debug(customer);
 			code = "0";
 			msg = "成功";
-			logger.info(JSONObject.fromObject(customer));
+			
 			JSONObject obj = new JSONObject();  // {'code':0, data: {}, msg:''}
 			obj.put("code", code);
 			obj.put("data", JSONObject.fromObject(customer));
@@ -119,9 +95,6 @@ public class CustomerController {
 		} else {
 			try {
 
-				if (StringUtils.equals("马云222", customer.getCust_name())) {
-					customer.setCust_name("马云edit");
-				}
 				customerService.updateCustomer(customer);
 				msg = "更新成功";
 				JSONObject obj = new JSONObject();

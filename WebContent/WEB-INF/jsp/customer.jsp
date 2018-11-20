@@ -50,156 +50,7 @@
 
 	<div id="wrapper">
 
-		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-static-top" role="navigation"
-			style="margin-bottom: 0">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index.html">BOOT客户管理系统 v2.0</a>
-		</div>
-		<!-- /.navbar-header -->
 
-		<ul class="nav navbar-top-links navbar-right">
-			<li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#"> <i class="fa fa-envelope fa-fw"></i>
-					<i class="fa fa-caret-down"></i>
-			</a>
-				<ul class="dropdown-menu dropdown-messages">
-					<li><a href="#">
-							<div>
-								<strong>令狐冲</strong> <span class="pull-right text-muted">
-									<em>昨天</em>
-								</span>
-							</div>
-							<div>今天晚上向大哥找我吃饭，讨论一下去梅庄的事...</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a class="text-center" href="#"> <strong>查看全部消息</strong>
-							<i class="fa fa-angle-right"></i>
-					</a></li>
-				</ul> <!-- /.dropdown-messages --></li>
-			<!-- /.dropdown -->
-			<li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#"> <i class="fa fa-tasks fa-fw"></i>
-					<i class="fa fa-caret-down"></i>
-			</a>
-				<ul class="dropdown-menu dropdown-tasks">
-					<li><a href="#">
-							<div>
-								<p>
-									<strong>任务 1</strong> <span class="pull-right text-muted">完成40%</span>
-								</p>
-								<div class="progress progress-striped active">
-									<div class="progress-bar progress-bar-success"
-										role="progressbar" aria-valuenow="40" aria-valuemin="0"
-										aria-valuemax="100" style="width: 40%">
-										<span class="sr-only">完成40%</span>
-									</div>
-								</div>
-							</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a href="#">
-							<div>
-								<p>
-									<strong>任务 2</strong> <span class="pull-right text-muted">完成20%</span>
-								</p>
-								<div class="progress progress-striped active">
-									<div class="progress-bar progress-bar-info" role="progressbar"
-										aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-										style="width: 20%">
-										<span class="sr-only">完成20%</span>
-									</div>
-								</div>
-							</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a class="text-center" href="#"> <strong>查看所有任务</strong>
-							<i class="fa fa-angle-right"></i>
-					</a></li>
-				</ul> <!-- /.dropdown-tasks --></li>
-			<!-- /.dropdown -->
-			<li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#"> <i class="fa fa-bell fa-fw"></i>
-					<i class="fa fa-caret-down"></i>
-			</a>
-				<ul class="dropdown-menu dropdown-alerts">
-					<li><a href="#">
-							<div>
-								<i class="fa fa-comment fa-fw"></i> 新回复 <span
-									class="pull-right text-muted small">4分钟之前</span>
-							</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a href="#">
-							<div>
-								<i class="fa fa-envelope fa-fw"></i> 新消息 <span
-									class="pull-right text-muted small">4分钟之前</span>
-							</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a href="#">
-							<div>
-								<i class="fa fa-tasks fa-fw"></i> 新任务 <span
-									class="pull-right text-muted small">4分钟之前</span>
-							</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a href="#">
-							<div>
-								<i class="fa fa-upload fa-fw"></i> 服务器重启 <span
-									class="pull-right text-muted small">4分钟之前</span>
-							</div>
-					</a></li>
-					<li class="divider"></li>
-					<li><a class="text-center" href="#"> <strong>查看所有提醒</strong>
-							<i class="fa fa-angle-right"></i>
-					</a></li>
-				</ul> <!-- /.dropdown-alerts --></li>
-			<!-- /.dropdown -->
-			<li class="dropdown"><a class="dropdown-toggle"
-				data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
-					<i class="fa fa-caret-down"></i>
-			</a>
-				<ul class="dropdown-menu dropdown-user">
-					<li><a href="#"><i class="fa fa-user fa-fw"></i> 用户设置</a></li>
-					<li><a href="#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
-					<li class="divider"></li>
-					<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
-							退出登录</a></li>
-				</ul> <!-- /.dropdown-user --></li>
-			<!-- /.dropdown -->
-		</ul>
-		<!-- /.navbar-top-links -->
-
-		<div class="navbar-default sidebar" role="navigation">
-			<div class="sidebar-nav navbar-collapse">
-				<ul class="nav" id="side-menu">
-					<li class="sidebar-search">
-						<div class="input-group custom-search-form">
-							<input type="text" class="form-control" placeholder="查询内容...">
-							
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">
-									<i class="fa fa-search" style="padding: 3px 0 3px 0;"></i>
-								</button>
-							</span>
-						</div> <!-- /input-group -->
-					</li>
-					<li><a href="customer.action" class="active"><i
-							class="fa fa-edit fa-fw"></i> 客户管理</a></li>
-					<li><a href="salevisit.action"><i
-							class="fa fa-dashboard fa-fw"></i> 客户拜访</a></li>
-				</ul>
-			</div>
-			<!-- /.sidebar-collapse -->
-		</div>
-		<!-- /.navbar-static-side --> </nav>
 
 		<div id="page-wrapper">
 			<div class="row">
@@ -216,38 +67,16 @@
 							<label for="customerName">客户名称</label> 
 							<input type="text" class="form-control" id="customerName" value="${vo.custName }" name="custName">
 						</div>
-						<div class="form-group">
-							<label for="customerFrom">客户来源</label> 
-							<select	class="form-control" id="customerFrom" placeholder="客户来源" name="custSource">
-								<option value="">--请选择--</option>
-								<c:forEach items="${fromType}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == vo.custSource}"> selected</c:if>>${item.dict_item_name }</option>
-								</c:forEach>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="custIndustry">所属行业</label> 
-							<select	class="form-control" id="custIndustry"  name="custIndustry">
-								<option value="">--请选择--</option>
-								<c:forEach items="${industryType}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == vo.custIndustry}"> selected</c:if>>${item.dict_item_name }</option>
-								</c:forEach>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="custLevel">客户级别</label>
-							<select	class="form-control" id="custLevel" name="custLevel">
-								<option value="">--请选择--</option>
-								<c:forEach items="${levelType}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == vo.custLevel}"> selected</c:if>>${item.dict_item_name }</option>
-								</c:forEach>
-							</select>
-						</div>
-						<button type="submit" class="btn btn-primary">查询</button>
+					
+					
+					
+						<button type="submit" class="btn btn-primary" >查询</button>
 						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#customersaveDialog" onclick="editCustomer(${row.cust_id})">新增</a>
 					</form>
 				</div>
 			</div>
+			
+			
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="panel panel-default">
@@ -258,24 +87,15 @@
 								<tr>
 									<th>ID</th>
 									<th>客户名称</th>
-									<th>客户来源</th>
-									<th>客户所属行业</th>
-									<th>客户级别</th>
-									<th>薪资</th>
-									<th>手机</th>
-									<th>操作</th>
+									
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${page.rows}" var="row">
+								<c:forEach items="${page}" var="row">
 									<tr>
 										<td>${row.cust_id}</td>
 										<td>${row.cust_name}</td>
-										<td>${row.cust_source}</td>
-										<td>${row.cust_industry}</td>
-										<td>${row.cust_level}</td>
-										<td>${row.cust_salary}</td>
-										<td>${row.cust_mobile}</td>
+										
 										<td>
 											<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick="editCustomer(${row.cust_id})">修改</a>
 											<a href="#" class="btn btn-danger btn-xs" onclick="deleteCustomer(${row.cust_id})">删除</a>
@@ -320,69 +140,6 @@
 								<input type="text" class="form-control" id="edit_customerName1" placeholder="客户名称" name="cust_name">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="edit_customerFrom" style="float:left;padding:7px 15px 0 27px;">客户来源</label> 
-							<div class="col-sm-10">
-								<select	class="form-control" id="edit_customerFrom1" placeholder="客户来源" name="cust_source">
-									<option value="">--请选择--</option>
-									<c:forEach items="${fromType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custSource}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_custIndustry" style="float:left;padding:7px 15px 0 27px;">所属行业</label>
-							<div class="col-sm-10"> 
-								<select	class="form-control" id="edit_custIndustry1"  name="cust_industry">
-									<option value="">--请选择--</option>
-									<c:forEach items="${industryType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custIndustry}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_custLevel" style="float:left;padding:7px 15px 0 27px;">客户级别</label>
-							<div class="col-sm-10">
-								<select	class="form-control" id="edit_custLevel1" name="cust_level">
-									<option value="">--请选择--</option>
-									<c:forEach items="${levelType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custLevel}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_linkMan" class="col-sm-2 control-label">联系人</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_linkMan1" placeholder="联系人" name="cust_linkman">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_salary" class="col-sm-2 control-label">薪资</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_salary1" placeholder="薪资" name="cust_salary">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_mobile" class="col-sm-2 control-label">移动电话</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_mobile1" placeholder="移动电话" name="cust_mobile">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_zipcode" class="col-sm-2 control-label">邮政编码</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_zipcode1" placeholder="邮政编码" name="cust_zipcode">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_address" class="col-sm-2 control-label">联系地址</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_address1" placeholder="联系地址" name="cust_address">
-							</div>
-						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -414,69 +171,6 @@
 							<label for="edit_customerName" class="col-sm-2 control-label">客户名称</label>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="edit_customerName" placeholder="客户名称" name="cust_name">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_customerFrom" style="float:left;padding:7px 15px 0 27px;">客户来源</label> 
-							<div class="col-sm-10">
-								<select	class="form-control" id="edit_customerFrom" placeholder="客户来源" name="cust_source">
-									<option value="">--请选择--</option>
-									<c:forEach items="${fromType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custSource}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_custIndustry" style="float:left;padding:7px 15px 0 27px;">所属行业</label>
-							<div class="col-sm-10"> 
-								<select	class="form-control" id="edit_custIndustry"  name="cust_industry">
-									<option value="">--请选择--</option>
-									<c:forEach items="${industryType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custIndustry}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_custLevel" style="float:left;padding:7px 15px 0 27px;">客户级别</label>
-							<div class="col-sm-10">
-								<select	class="form-control" id="edit_custLevel" name="cust_level">
-									<option value="">--请选择--</option>
-									<c:forEach items="${levelType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custLevel}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_linkMan" class="col-sm-2 control-label">联系人</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_linkMan" placeholder="联系人" name="cust_linkman">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_salary" class="col-sm-2 control-label">薪资</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_salary" placeholder="薪资" name="cust_salary">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_mobile" class="col-sm-2 control-label">移动电话</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_mobile" placeholder="移动电话" name="cust_mobile">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_zipcode" class="col-sm-2 control-label">邮政编码</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_zipcode" placeholder="邮政编码" name="cust_zipcode">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_address" class="col-sm-2 control-label">联系地址</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_address" placeholder="联系地址" name="cust_address">
 							</div>
 						</div>
 					</form>
@@ -518,14 +212,7 @@
 					{
 					$("#edit_cust_id").val(datas.data.cust_id);
 					$("#edit_customerName").val(datas.data.cust_name);
-					$("#edit_customerFrom").val(datas.data.cust_source);
-					$("#edit_custIndustry").val(datas.data.cust_industry);
-					$("#edit_custLevel").val(datas.data.cust_level);
-					$("#edit_linkMan").val(datas.data.cust_linkman);
-					$("#edit_salary").val(datas.data.cust_salary);
-					$("#edit_mobile").val(datas.data.cust_mobile);
-					$("#edit_zipcode").val(datas.data.cust_zipcode);
-					$("#edit_address").val(datas.data.cust_address);
+					
 					}
 					else{
 						alert(datas.msg);
@@ -575,9 +262,7 @@
 			
 			window.location.reload();
 		}
-		
-		
-		
+	
 	</script>
 
 </body>

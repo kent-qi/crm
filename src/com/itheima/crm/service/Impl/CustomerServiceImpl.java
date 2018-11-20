@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.itheima.crm.mapper.CustomerMapper;
 import com.itheima.crm.pojo.Customer;
-import com.itheima.crm.pojo.QueryVo;
+
 import com.itheima.crm.service.CustomerService;
 import com.itheima.crm.utils.Page;
 
@@ -18,21 +18,14 @@ public class CustomerServiceImpl implements CustomerService {
 	private CustomerMapper customerMapper;
 
 	@Override
-	public Page<Customer> getCustomerByQueryVo(QueryVo vo) {
+	public List<Customer>  getCustomer() {
 
-		// 计算分页查询从哪条记录开始
-		vo.setStart((vo.getPage() - 1) * vo.getRows());
-
-		// 查询总记录数
-		Integer total = customerMapper.getCountByQueryVo(vo);
-
+		
 		// 查询每页的数据列表
-		List<Customer> list = customerMapper.getCustomerByQueryVo(vo);
+		List<Customer> list = customerMapper.getCustomer();
 
-		// 包装分页数据
-		Page<Customer> page = new Page<Customer>(total, vo.getPage(), vo.getRows(), list);
-
-		return page;
+		
+		return list;
 	}
 
 	@Override
@@ -55,5 +48,7 @@ public class CustomerServiceImpl implements CustomerService {
 		customerMapper.insert(customer);
 
 	}
+
+	
 
 }

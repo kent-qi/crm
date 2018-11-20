@@ -1,7 +1,9 @@
 package com.itheima.crm.service;
 
+import java.util.List;
+
 import com.itheima.crm.pojo.Customer;
-import com.itheima.crm.pojo.QueryVo;
+
 import com.itheima.crm.utils.Page;
 
 /**
@@ -18,7 +20,7 @@ public interface CustomerService {
 	 * @param vo
 	 * @return
 	 */
-	Page<Customer> getCustomerByQueryVo(QueryVo vo);
+	List<Customer> getCustomer();
 
 	/**
 	 * 跟据id查询用户信息

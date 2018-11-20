@@ -3,7 +3,7 @@ package com.itheima.crm.mapper;
 import java.util.List;
 
 import com.itheima.crm.pojo.Customer;
-import com.itheima.crm.pojo.QueryVo;
+
 
 /**
  * 客户信息持久化接口
@@ -19,15 +19,9 @@ public interface CustomerMapper {
 	 * @param vo
 	 * @return
 	 */
-	List<Customer> getCustomerByQueryVo(QueryVo vo);
+	List<Customer> getCustomer();
 
-	/**
-	 * 跟据查询条件查询总记录数
-	 * 
-	 * @param vo
-	 * @return
-	 */
-	Integer getCountByQueryVo(QueryVo vo);
+
 
 	/**
 	 * 跟据id查询用户信息
